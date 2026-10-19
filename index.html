@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Login UI</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fafafa;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-box {
+      width: 350px;
+      padding: 40px;
+      background: white;
+      border: 1px solid #dbdbdb;
+      text-align: center;
+    }
+
+    .logo {
+      font-family: cursive;
+      font-size: 38px;
+      margin-bottom: 30px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px 10px;
+      margin-bottom: 8px;
+      background: #fafafa;
+      border: 1px solid #dbdbdb;
+      border-radius: 3px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: none;
+      border-radius: 8px;
+      background: #0095f6;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .note {
+      margin-top: 20px;
+      color: #737373;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <main class="login-box">
+    <div class="logo">Instagram</div>
+
+    <form id="loginForm">
+      <input
+        type="text"
+        placeholder="Nama pengguna"
+        autocomplete="username"
+        required
+      >
+
+      <input
+        type="password"
+        placeholder="Kata sandi"
+        autocomplete="current-password"
+        required
+      >
+
+      <button type="submit">Masuk</button>
+    </form>
+
+    <p class="note">
+      Demo tampilan login untuk pembelajaran.
+      Data tidak dikirim atau disimpan.
+    </p>
+  </main>
+
+  <script>
+    document.getElementById("loginForm")
+      .addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Ini hanya demo tampilan login.");
+      });
+  </script>
+</body>
+</html>
